@@ -1,0 +1,16 @@
+<script>
+	navigator.geolocation.getCurrentPosition(onGeoposition);
+	function onGeoposition(){
+	
+	}
+
+	var watch = navigator.geolocation.watchPosition(onGeoWatch);
+	function onGeoWatch(){
+		console.log(position);
+		navigator.geolocation.clearWatch(watch);
+	}
+	// 6c4a6333a51a45d409c994610aedaa0b
+	// https://api.openweathermap.org/data/2.5/weather?lat=37.500496&lon=127.036459&appid=6c4a6333a51a45d409c994610aedaa0b
+	// https://openweathermap.org/img/wn/10d@2x.png http://openweathermap.org/img/wn/10d@2x.png
+	// https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+</script>  
